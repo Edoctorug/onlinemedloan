@@ -1,0 +1,5 @@
+# created by virtualenv automatically
+venv
+.idea/
+medical_project/local_settings.py
+*/migrations/*
