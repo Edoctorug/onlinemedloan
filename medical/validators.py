@@ -16,3 +16,11 @@ def email_validator(value):
              regex='^[\w\-\.]+@([\w\-]+\.)+[\w\-]{2,4}$',
              regex_err_msg='Your email is not valid.',
              )
+
+
+def phone_number_validator(value):
+    print(value)
+    print(str(value).startswith('2547'))
+    print(len(value))
+    if not str(value).startswith('2547') or not len(value) == 12:
+        raise ValidationError('Your phone number must start with 2547 and has 12 digits')
